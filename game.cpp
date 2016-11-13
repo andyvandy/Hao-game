@@ -12,7 +12,8 @@ void gameloop(){
     int width= 200;
     int height= 200;
     sf::RenderWindow window(sf::VideoMode(width, height), "Game prototype!");
-    sf::CircleShape circle(50);
+    
+    Character player1(1,1);
     while (1)
     {   
         sf::Event event;
@@ -22,7 +23,7 @@ void gameloop(){
                 window.close();
         }
         window.clear();
-        window.draw(circle);
+        window.draw(player1.sprite);
         window.display();
         if(!window.isOpen()){
             break;
