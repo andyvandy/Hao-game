@@ -19,3 +19,21 @@ Character::Character(int _x, int _y ){
     sf::IntRect rect={body[0]*17,body[1]*17,16,16};
     sprite = sf::Sprite(texture,rect);
 }
+void Character::move(int direction){
+    switch(direction){
+        case 0:
+            y-=1:
+            break;
+        case 1:
+            x+=1:
+            break;
+        case 2:
+            y+=1:
+            break;
+        case 3:
+            x-=1:
+            break;
+
+    }
+    sprite.setPosition(x,y);
+}

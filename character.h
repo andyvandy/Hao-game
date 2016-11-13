@@ -15,6 +15,7 @@ public:
     Character(int _x, int _y );
     void set_pos(int _x,int _y);
     void init();
+    void move(int direction);
     
 };
 
