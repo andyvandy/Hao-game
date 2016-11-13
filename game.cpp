@@ -1,5 +1,9 @@
+/*
+This is the main controller where we will parse user inputs in the gmaeloop
+
+*/
 #include "character.h"
-// Hello
+#include  <SFML/Graphics.hpp>
 
 
 

@@ -3,6 +3,12 @@
 #include <SFML/Graphics.hpp>
 
 class Character{
+private:
+    int x;
+    int y;
+public:
+    void set_pos(int _x,int _y);
+
     
 };
 
