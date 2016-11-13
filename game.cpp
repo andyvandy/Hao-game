@@ -19,7 +19,7 @@ void gameloop() {
 		while (window.pollEvent(event)) {
 			if (event.type == sf::Event::Closed)
 				window.close();
-			if (event.type == sf::Event::Closed) {
+			if (event.type == sf::Event::KeyPressed) {
 				switch (event.key.code) {
 				case sf::Keyboard::Left:
 					dir8 = 3;
