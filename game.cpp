@@ -21,6 +21,9 @@ void gameloop(){
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+           if (event.type == sf::Event::KeyPressed) {
+        	   window.close();
+           }
         }
         window.clear();
         window.draw(player1.sprite);
